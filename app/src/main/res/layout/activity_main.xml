@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/passwordWord"
+        android:layout_width="287dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="18dp"
+        android:text="Password"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/username"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/username"
+        app:layout_constraintTop_toBottomOf="@id/username" />
+
+    <TextView
+        android:id="@+id/loginText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.04" />
+
+    <TextView
+        android:id="@+id/emailWord"
+        android:layout_width="287dp"
+        android:layout_height="28dp"
+        android:text="Email"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/loginText"
+        app:layout_constraintStart_toStartOf="@id/loginText"
+        app:layout_constraintTop_toBottomOf="@id/loginText" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="287dp"
+        android:layout_height="38dp"
+        android:ems="10"
+        android:hint="example@dog.com"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="@id/emailWord"
+        app:layout_constraintStart_toStartOf="@id/emailWord"
+        app:layout_constraintTop_toBottomOf="@id/emailWord" />
+
+    <Button
+        android:id="@+id/phoneButton"
+        android:layout_width="287dp"
+        android:layout_height="41dp"
+        android:text="🐶 Use Woof instead"
+        app:layout_constraintEnd_toEndOf="@id/editTextTextEmailAddress"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@id/editTextTextEmailAddress"
+        app:layout_constraintTop_toBottomOf="@id/editTextTextEmailAddress" />
+
+    <TextView
+        android:id="@+id/usernameWord"
+        android:layout_width="287dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="18dp"
+        android:text="Username"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/phoneButton"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/phoneButton"
+        app:layout_constraintTop_toBottomOf="@id/phoneButton" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="287dp"
+        android:layout_height="38dp"
+        android:ems="10"
+        android:hint="name_breed_fav#"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@id/usernameWord"
+        app:layout_constraintStart_toStartOf="@id/usernameWord"
+        app:layout_constraintTop_toBottomOf="@id/usernameWord" />
+
+    <TextView
+        android:id="@+id/PasswordWord"
+        android:layout_width="287dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="18dp"
+        android:text="Password"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/username"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/username"
+        app:layout_constraintTop_toBottomOf="@id/username" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="287dp"
+        android:layout_height="38dp"
+        android:ems="10"
+        android:hint="password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@id/PasswordWord"
+        app:layout_constraintStart_toStartOf="@id/PasswordWord"
+        app:layout_constraintTop_toBottomOf="@id/PasswordWord"
+        tools:layout_editor_absoluteX="101dp"
+        tools:layout_editor_absoluteY="178dp" />
+
+    <TextView
+        android:id="@+id/DogYearWord"
+        android:layout_width="287dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="18dp"
+        android:text="Age"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/password"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/password"
+        app:layout_constraintTop_toBottomOf="@id/password" />
+
+    <EditText
+        android:id="@+id/DogYear"
+        android:layout_width="287dp"
+        android:layout_height="38dp"
+        android:ems="10"
+        android:hint="Dog Year Age"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@id/DogYearWord"
+        app:layout_constraintStart_toStartOf="@id/DogYearWord"
+        app:layout_constraintTop_toBottomOf="@id/DogYearWord"
+        tools:layout_editor_absoluteX="101dp"
+        tools:layout_editor_absoluteY="178dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="18dp"
+        android:text="Sign Up"
+        app:layout_constraintEnd_toEndOf="@id/Terms"
+        app:layout_constraintStart_toStartOf="@id/Terms"
+        app:layout_constraintTop_toBottomOf="@id/Terms"
+        tools:layout_editor_absoluteX="159dp"
+        tools:layout_editor_absoluteY="243dp" />
+
+    <TextView
+        android:id="@+id/Terms"
+        android:layout_width="287dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="18dp"
+        android:text="By clicking Sign Up, you are indicating that you have read and acknowledge the Terms of Service and Privacy Notice."
+        android:textSize="11sp"
+        app:layout_constraintEnd_toEndOf="@id/DogYear"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/DogYear"
+        app:layout_constraintTop_toBottomOf="@id/DogYear" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="229dp"
+        android:layout_height="114dp"
+        android:layout_marginStart="91dp"
+        android:layout_marginTop="572dp"
+        android:layout_marginEnd="91dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dog_life_removebg_preview" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
